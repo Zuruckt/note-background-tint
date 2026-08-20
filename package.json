@@ -5,6 +5,7 @@
   "description": "Foundry VTT v14 module adding a persisted background colour to Map Notes",
   "type": "module",
   "scripts": {
-    "test": "node --test test/*.test.mjs"
+    "test": "node --test test/*.test.mjs",
+    "build": "rm -f module.zip && zip -r module.zip module.json scripts lang README.md"
   }
 }

@@ -6,6 +6,26 @@ Note configuration sheet.
 Foundry lets you tint the note *icon* through `texture.tint`, but the `ControlIcon` background
 (`note.controlIcon.bg`) has no document property and no configuration UI. This module adds one.
 
+## Installation
+
+While the repository is private, install it by hand — copy or symlink this directory into your
+Foundry user data as `Data/modules/note-background-tint`. The folder name must match the manifest
+`id`.
+
+```bash
+ln -s "$PWD" "<userdata>/Data/modules/note-background-tint"
+```
+
+Once the repository is public, the manifest URL below can be pasted into Foundry's
+**Install Module** dialog instead:
+
+```
+https://github.com/Zuruckt/note-background-tint/releases/latest/download/module.json
+```
+
+Listing the module in Foundry's in-app package browser is a separate, optional step which requires
+submitting the package at foundryvtt.com.
+
 ## Data shape
 
 The colour is stored as a document flag, which is the only per-document extension point available
@@ -45,3 +65,21 @@ manually:
 3. Pick a colour, save, and confirm the note's icon background is tinted on the canvas.
 4. Reload the world and confirm the colour persisted.
 5. Clear the field, save, and confirm the background returns to the default white.
+
+## Releasing
+
+`.github/workflows/release.yml` builds and publishes a release when a `v*` tag is pushed. It runs
+the tests, checks that the manifest `version` and `download` URL agree with the tag, then attaches
+`module.zip` and `module.json` to the release.
+
+```bash
+npm run build       # build module.zip locally, to check the archive
+git tag v1.0.0 && git push origin v1.0.0
+```
+
+Bump `version` and the tag in `download` together when cutting a new version — the workflow fails
+the release if they disagree. `manifest` always points at `releases/latest/download/module.json`,
+which is how Foundry discovers updates, so it never needs changing.
+
+Note that the release assets are only reachable anonymously once the repository is public. Foundry
+fetches the manifest without credentials, so a manifest-URL install fails against a private repo.
