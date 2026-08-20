@@ -1,0 +1,10 @@
+{
+  "NOTEBACKGROUNDTINT": {
+    "FIELDS": {
+      "background": {
+        "label": "Background Tint",
+        "hint": "A tint applied to the note icon's background. Leave empty to use the default white background."
+      }
+    }
+  }
+}

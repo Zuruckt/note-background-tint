@@ -1,0 +1,10 @@
+{
+  "NOTEBACKGROUNDTINT": {
+    "FIELDS": {
+      "background": {
+        "label": "Cor do Fundo",
+        "hint": "Cor aplicada ao fundo do ícone da anotação. Deixe em branco para usar o fundo branco padrão."
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "note-background-tint",
+  "title": "Map Note Background Tint",
+  "description": "Adds a persisted, per-Note background colour to the standard Map Note configuration. Existing Notes are unaffected and keep the default white background.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Jeferson"
+    }
+  ],
+  "esmodules": [
+    "scripts/module.mjs"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ]
+}
