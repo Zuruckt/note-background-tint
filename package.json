@@ -1,6 +1,6 @@
 {
   "name": "note-background-tint",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Foundry VTT v14 module adding a persisted background colour to Map Notes",
   "type": "module",

@@ -2,7 +2,7 @@
   "id": "note-background-tint",
   "title": "Map Note Background Tint",
   "description": "Adds a persisted, per-Note background colour to the standard Map Note configuration. Existing Notes are unaffected and keep the default white background.",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -14,7 +14,7 @@
   ],
   "url": "https://github.com/Zuruckt/note-background-tint",
   "manifest": "https://github.com/Zuruckt/note-background-tint/releases/latest/download/module.json",
-  "download": "https://github.com/Zuruckt/note-background-tint/releases/download/v1.0.0/module.zip",
+  "download": "https://github.com/Zuruckt/note-background-tint/releases/download/v0.1.0/module.zip",
   "esmodules": [
     "scripts/module.mjs"
   ],
